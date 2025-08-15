@@ -9,14 +9,15 @@ My Notes on Java
    - Use HashMap or ConcurrentHashMap instead.
 
 ## Multithreading
- - volatile:
-   - "This variable changes a lot, and is accessed by multiple threads! Don't cache it at the CPU level (registers, cache), only have it in memory."
  - synchronized:
    - When applied to multiple methods, one method being accessed blocks the other synchronized methods!
    - a synchronized block is Reentrant: a thread cannot prevent itself from entering a/another critical section.
  - atomic operations:
    - all reference assignments;
    - all primitive assignments, except for long and double;
+- volatile:
+   - "This variable changes a lot, and is accessed by multiple threads! Don't cache it at the CPU level (registers, cache), only have it in memory."
+   - When applied to double and long primitives, it guarantees their assignment is atomic. 
 
 ## Spring Boot 
 
