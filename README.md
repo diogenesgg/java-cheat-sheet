@@ -12,7 +12,8 @@ My Notes on Java
  - volatile:
    - "This variable changes a lot, and is accessed by multiple threads! Don't cache it at the CPU level (registers, cache), only have it in memory."
  - synchronized:
-   - When applied to multiple methods, one method being accessed blocks the other synchronized ones! 
+   - When applied to multiple methods, one method being accessed blocks the other synchronized methods!
+   - a synchronized block is Reentrant: a thread cannot prevent itself from entering a/another critical section. 
 
 ## Spring Boot 
 
