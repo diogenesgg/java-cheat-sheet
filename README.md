@@ -8,7 +8,7 @@ My Notes on Java
    - Not officially deprecated (with the @Deprecated). However, it is widely considered obsolete, and its use is discouraged for new development.
    - Use HashMap or ConcurrentHashMap instead.
 
-## Multithreading
+## Multithreading/Concurrency
  - synchronized:
    - When applied to multiple methods, one method being accessed blocks the other synchronized methods!
    - a synchronized block is Reentrant: a thread cannot prevent itself from entering a/another critical section.
@@ -19,5 +19,13 @@ My Notes on Java
    - "This variable changes a lot, and is accessed by multiple threads! Don't cache it at the CPU level (registers, cache), only have it in memory."
    - When applied to double and long primitives, it guarantees their assignment is atomic. 
 
-## Spring Boot 
+## Virtual Threads
+ - 
+
+## Memory Management 
+ - Heap vs stack vs metaspace 
+
+## Date and Time
+ 
+## Functional Programming
 
