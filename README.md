@@ -19,6 +19,42 @@ My Notes on Java
    - "This variable changes a lot, and is accessed by multiple threads! Don't cache it at the CPU level (registers, cache), only have it in memory."
    - When applied to double and long primitives, it guarantees their assignment is atomic. 
 
+## Collections
+- List
+  - ArrayList
+  - LinkedList
+  - CopyOnWriteArrayList
+    - A thread-safe variant of ArrayList in which all mutative operations (add, set, and so on) are implemented by making a fresh copy of the underlying array.
+- Map
+  - HashMap
+  - LinkedHashMap
+  - TreeMap
+  - ConcurrentHashMap
+- Set
+  - HashSet
+  - LinkedHashSet
+  - TreeSet
+  - CopyOnWriteArraySet
+  - ConcurrentSkipListSet
+- Queue
+  - PriorityQueue
+  - ConcurrentLinkedQueue
+  - ArrayBlockingQueue
+  - PriorityBlockingQueue
+- Deque (insertion and removal at both ends. "double ended queue")
+  - LinkedList
+  - ArrayDeque
+  - ConcurrentLinkedDeque
+  - LinkedBlockingDeque
+- Heap
+  - PriorityQueue
+    - PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+    - PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
+    - add and poll methods
+- Stack
+  - LinkedList
+  - Stack (extends the obsolete Vector class)
+
 ## Virtual Threads
  - 
 
