@@ -19,7 +19,7 @@ My Notes on Java
    - "This variable changes a lot, and is accessed by multiple threads! Don't cache it at the CPU level (registers, cache), only have it in memory."
    - When applied to double and long primitives, it guarantees their assignment is atomic. 
 
-## Collections
+## Collections Classes
 - List
   - ArrayList
   - LinkedList
@@ -53,7 +53,8 @@ My Notes on Java
     - add and poll methods
 - Stack
   - LinkedList
-  - Stack (extends the obsolete Vector class)
+  - Deque implementations
+  - ~Stack~ (extends the obsolete Vector class)
 
 ## Virtual Threads
  - 
